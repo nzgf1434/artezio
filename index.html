@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="myslider">
+        <div class="wrapper">
+            <form action="" name="form-likes">
+                <ul class="slide-container">
+                    <li>
+                        <img src="img/1.jpg" alt="">
+                        <div class="options">
+                            <h3>Text text text text text 1</h3>
+                            <label><input type="checkbox" name="like1"><i class="fas fa-heart"></i></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/2.jpg" alt="">
+                        <div class="options">
+                            <h3>Text text text text text 2</h3>
+                            <label><input type="checkbox" name="like2"><i class="fas fa-heart"></i></label>
+                        </div>
+                    </li>
+                    <li class="center">
+                        <img src="img/3.jpg" alt="">
+                        <div class="options">
+                            <h3>Text text text text text 3</h3>
+                            <label><input type="checkbox" name="like3"><i class="fas fa-heart"></i></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/4.jpg" alt="">
+                        <div class="options">
+                            <h3>Text text text text text 4</h3>
+                            <label><input type="checkbox" name="like4"><i class="fas fa-heart"></i></label>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/5.jpg" alt="">
+                        <div class="options">
+                            <h3>Text text text text text 5</h3>
+                            <label><input type="checkbox" name="like5"><i class="fas fa-heart"></i></label>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <i id="right" class="fas fa-arrow-right"></i>
+        <i id="left" class="fas fa-arrow-left"></i>
+    </div>
+    <script src="slider.js"></script>
+    <script>
+        var slider = new MySlider();
+        slider.initSlider();
+    </script>
+    
+</body>
+</html>
