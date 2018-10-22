@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="tree-style.css">
+</head>
+<body>
+    <div class="view">
+        <div class="start">
+            start
+            <div class="step1">
+                step 1
+                <div class="step2">
+                    step 2
+                    <div class="step3">
+                        step3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="start">
+            start
+            <div class="step1">
+                step 1
+                <div class="step2">
+                    step 2
+                    <div class="step3">
+                        step3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="start">
+            start
+            <div class="step1">
+                step 1
+                <div class="step2">
+                    step 2
+                    <div class="step3">
+                        step3
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <button>MoveUp to Parent</button>            
+            <button>MoveLeft to Sibling</button>
+            <button>MoveRight to Sibling</button>
+            <button>MoveDown to Child</button>
+        </div>
+        <button>Add element</button>
+        <button>Delete element</button>
+    </div>
+    
+    <script src="tree.js"></script>  
+    <script>
+        var runner = new DomRunner();
+    </script>  
+</body>
+</html>

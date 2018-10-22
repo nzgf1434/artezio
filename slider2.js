@@ -140,8 +140,4 @@ class NewSlider{
             el.style.marginLeft = this.margin + 'px';
         }   
     }
-
-
-
-
 }
