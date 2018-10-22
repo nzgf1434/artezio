@@ -27,7 +27,7 @@ class DomRunner{
     }
 
     moveParent(el){
-        if (el.parentElement !== document.body){
+        if (el.parentElement !== document.body.firstElementChild){
             this.currentEl.classList.remove('current');
             this.currentEl = el.parentElement;
             this.currentEl.classList.add('current');
@@ -75,17 +75,22 @@ class DomRunner{
     }
 
     deleteEl(el){
-        if(el.previousElementSibling){
+        if(el.previousElementSibling && !(el.classList.contains('start'))){
             this.currentEl = el.previousElementSibling;
+            this.currentEl.classList.add('current');
+            el.parentElement.removeChild(el);
         }
-        else if(el.nextElementSibling){
+        else if(el.nextElementSibling && !(el.classList.contains('start'))){
             this.currentEl = el.nextElementSibling;
+            this.currentEl.classList.add('current');
+            el.parentElement.removeChild(el);
         }
-        else if(el.parentElement){
+        else if(el.parentElement && !(el.classList.contains('start'))){
             this.currentEl = el.parentElement;
+            this.currentEl.classList.add('current');
+            el.parentElement.removeChild(el);
         }
-        this.currentEl.classList.add('current');
-        el.parentElement.removeChild(el);
+        
     }
 
 }
