@@ -41,16 +41,17 @@ class NewSlider{
     }
 
 
-    initSlider(settings){
+    initSlider(settings, width = (parseInt(settings.width) || 800)){
 
         this.galleryLength = document.querySelector('.slide-container').children.length;
         this.slides = document.querySelector('.slide-container').children;
-        if(settings){
-            this.slideWidth = parseInt(settings.width) || 800;
-        }
-        else{
-            this.slideWidth = 800;
-        };
+        // if(settings){
+        //     this.slideWidth = parseInt(settings.width) || 800;
+        // }
+        // else{
+        //     this.slideWidth = 800;
+        // };
+        this.slideWidth = width;
         const container = document.querySelector('.slide-container');
         const btnRight = document.getElementById('right');
         const btnLeft = document.getElementById('left');
